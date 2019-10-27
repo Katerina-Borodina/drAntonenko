@@ -23,8 +23,6 @@
 
 
 @import "partials/variables"
-@import "partials/mixins"
-@import "partials/interfase"
 
 body
   overflow: auto
@@ -53,6 +51,7 @@ a
       .search
         width: 600px
         border: none
+        transition: all .5s ease-out
     &-img
       width: 15px
       img
@@ -67,10 +66,13 @@ a
         justify-content: center
         align-items: center
         position: relative
+        transition: all 1s ease-out
+        z-index: 2
   &_addresses
     display: flex
     flex-direction: row
     align-items: center
+    transition: all .5s ease-out
     &-img
       margin-right: 15px
       margin-top: -7px
@@ -334,13 +336,10 @@ nav li:hover > .submenu
       width: 1200px
 
 
-
-
-
-
-
-@import "partials/footer"
-@import "partials/media"
+.hover-menu
+  color: #e01b1b
+  background-color: rgba(224, 27, 27, 0.1)
+  font-family: Gilroy-SemiBold, sans-serif
 
 
 
